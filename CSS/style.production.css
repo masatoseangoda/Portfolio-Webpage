@@ -41,10 +41,12 @@ h3 {
 
 a {
     color:var(--secondary-color);
+    text-decoration: none;
 }
 
 a:visited {
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
 a:hover, a:focus {
@@ -90,6 +92,7 @@ button:focus,
 
 .page-footer {
     clear: both;
+    position:center;
    
 }
 
@@ -209,4 +212,10 @@ ul {
 
       .cloud-back {
         animation: 34s cloud-move-reverse infinite alternate linear;
+      }
+
+      .table{
+          text-align: center;
+            margin-left:auto; 
+            margin-right:auto;
       }
