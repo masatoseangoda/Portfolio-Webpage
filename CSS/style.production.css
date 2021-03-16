@@ -147,9 +147,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    -ms-grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 100;
     -ms-grid-gap: 20px;
-    -ms-display: grid;
 
 }
 
@@ -181,6 +180,7 @@ ul {
       -ms-grid-column: auto / auto;
       -ms-grid-row: auto / auto;
     }
+
     h1 {
       font-size: 22px;
     }
@@ -273,3 +273,8 @@ ul {
       .header {
           text-align: right;
       }
+
+      .grid {
+        display: grid;
+       -ms-grid-column: 1fr 1fr 1fr;
+    }
