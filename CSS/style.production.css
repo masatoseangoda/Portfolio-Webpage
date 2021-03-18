@@ -5,6 +5,8 @@
 * Browsers: last 2 version
 */
 
+
+
 :root {
   --primary-color: #05a3b8;
   --secondary-color: #e0b354;
@@ -160,12 +162,64 @@ ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 20px 1fr 20px 1fr;
   grid-gap: 20px;
-  -ms-grid-columns: 1fr 100;
-  -ms-grid-gap: 20px;
-
+  grid-template:
+  "a b c" 200px
+  "d e f" 200px /
+  1fr 1fr 1fr;
+  -ms-grid-rows: 200px 20px 200px;
 }
+
+.cell-A {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  grid-row: 1;
+  grid-area: a;
+}
+
+.cell-B {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  grid-row: 1;
+  grid-area: b;
+}
+
+.cell-C {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-row: 1;
+  grid-column: 5;
+  grid-area: c;
+}
+
+.cell-D {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-row: 3;
+  grid-column: 1;
+  grid-area: d;
+}
+
+.cell-E {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-row: 3;
+  grid-column: 3;
+  grid-area: e;
+}
+
+
+.cell-F {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-row: 3;
+  grid-column: 5;
+  grid-area: f;
+}
+
 
 .grid_item {
   background-color: lightgray;
@@ -294,5 +348,5 @@ ul {
     .header {
         text-align: right;
     }
-
     
+
